@@ -50,10 +50,10 @@
                 <a href="#services" onclick=$("#menu-close").click();>สินค้า</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                <a href="#portfolio" onclick=$("#menu-close").click();>เกี่ยวกับเรา</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>เกี่ยวกับเรา</a>
+                <a href="#contact" onclick=$("#menu-close").click();>Login</a>
             </li>
         </ul>
     </nav>
@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>NEWS</h2>
-                    <p class="lead">ข่าวสาร <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <p class="lead">ข่าวสาร </a>.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -93,54 +93,43 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
+							<!-- icon src="C:\Users\Rogue One\Downloads\Logo\honda.png" -->
+                              <img src="img\logo\honda.png">
                                 <h4>
                                     <strong>HONDA</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>เลือกชมผลิตภัณฑ์จากค่าย Honda</p>
+                                <a href="#" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
+                               <img src="img\logo\yamaha.png">
                                 <h4>
                                     <strong>YAMAHA</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>เลือกชมผลิตภัณฑ์จากค่าย Yamaha</p>
+                                <a href="#" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
+                               <img src="img\logo\kawasaki.png">
                                 <h4>
                                     <strong>KAWASAKI</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>เลือกชมผลิตภัณฑ์จากค่าย Kawasaki</p>
+                                <a href="#" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
+                                <img src="img\logo\suzuki.png">
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>SUZUKI</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>เลือกชมผลิตภัณฑ์จากค่าย Suzuki</p>
+                                <a href="#" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                     </div>
