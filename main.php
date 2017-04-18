@@ -50,10 +50,10 @@
                 <a href="#services" onclick=$("#menu-close").click();>สินค้า</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>เกี่ยวกับเรา</a>
+                   <a href="port.php" onclick=$("#menu-close").click();>เกี่ยวกับเรา</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Login</a>
+                <a href="login.php" onclick=$("#menu-close").click();>Login</a>
             </li>
         </ul>
     </nav>
@@ -99,7 +99,7 @@
                                     <strong>HONDA</strong>
                                 </h4>
                                 <p>เลือกชมผลิตภัณฑ์จากค่าย Honda</p>
-                                <a href="#" class="btn btn-light">ค้นหา</a>
+                                <a href="Honda.php" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -109,7 +109,7 @@
                                     <strong>YAMAHA</strong>
                                 </h4>
                                 <p>เลือกชมผลิตภัณฑ์จากค่าย Yamaha</p>
-                                <a href="#" class="btn btn-light">ค้นหา</a>
+                                <a href="yamaha.php" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -119,7 +119,7 @@
                                     <strong>KAWASAKI</strong>
                                 </h4>
                                 <p>เลือกชมผลิตภัณฑ์จากค่าย Kawasaki</p>
-                                <a href="#" class="btn btn-light">ค้นหา</a>
+                                <a href="kawasaki.php" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -129,7 +129,7 @@
                                     <strong>SUZUKI</strong>
                                 </h4>
                                 <p>เลือกชมผลิตภัณฑ์จากค่าย Suzuki</p>
-                                <a href="#" class="btn btn-light">ค้นหา</a>
+                                <a href="suzuki.php" class="btn btn-light">ค้นหา</a>
                             </div>
                         </div>
                     </div>
