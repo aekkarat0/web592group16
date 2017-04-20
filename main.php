@@ -1,17 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
+<?php
+ $appid = "web592group16.appspot.com";
+ $page = $_GET['p'];
+ if($page=='') $page='main';
+ $title = $page;
+ function panel_include($title,$file,$ptype='default'){	
+//echo "<div class='panel panel-$ptype'>";
+//echo "<div class='panel-heading'>$title</div>";
+//echo "<div class='panel-body'>";
+if(file_exists($file)){
+ include($file);
+}else{
+ echo "ไม่พบไฟล์ $file ";
+}
+//echo "</div>";
+//echo "</div>";
+ }
+ use google\appengine\api\cloud_storage\CloudStorageTools; 
+ 
+function userpic($uid){
+    global $appid;
+	$userpic="gs://$appid/{$uid}.jpg";
+    if(!file_exists($userpic)){
+        return "user.png";
+		}
+		return CloudStorageTools::getImageServingUrl($userpic,["size"=>200]); 
+		} 
+ 
+?>
+
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Moto Shop</title>
-
-    <!-- Bootstrap Core CSS -->
+ <title><?= $page ?> </title>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link rel="stylesheet"
+href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	
+	
+	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -27,14 +62,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
-
-		<h1> test<h1>
-
-    <!-- Navigation -->
+	
+	  <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -42,25 +74,17 @@
             <li class="sidebar-brand">
                 <a href="#top" onclick=$("#menu-close").click();>Moto Shop</a>
             </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>หน้าแรก</a>
+			<li>
+			<?php panel_include("Menu","menu.php"); ?>	
             </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>ข่าวสาร</a>
+			<li>
+			<?php panel_include("User","user.php"); ?>
             </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>สินค้า</a>
-            </li>
-            <li>
-                   <a href="port.php" onclick=$("#menu-close").click();>เกี่ยวกับเรา</a>
-            </li>
-            <li>
-                <a href="login.php" onclick=$("#menu-close").click();>Login</a>
-            </li>
+			
         </ul>
     </nav>
-
-    <!-- Header -->
+	
+	<!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center" style="color:#ffffff">
             <h1>Moto Shop</h1>
@@ -83,70 +107,13 @@
         </div>
         <!-- /.container -->
     </section>
+	
+<section id="#services" class="#services">
+<?php panel_include($title,"body.php" ,"primary"); ?>
+</section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>สินค้า</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<!-- icon src="C:\Users\Rogue One\Downloads\Logo\honda.png" -->
-                              <img src="img\logo\honda.png">
-                                <h4>
-                                    <strong>HONDA</strong>
-                                </h4>
-                                <p>เลือกชมผลิตภัณฑ์จากค่าย Honda</p>
-                                <a href="Honda.php" class="btn btn-light">ค้นหา</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                               <img src="img\logo\yamaha.png">
-                                <h4>
-                                    <strong>YAMAHA</strong>
-                                </h4>
-                                <p>เลือกชมผลิตภัณฑ์จากค่าย Yamaha</p>
-                                <a href="yamaha.php" class="btn btn-light">ค้นหา</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                               <img src="img\logo\kawasaki.png">
-                                <h4>
-                                    <strong>KAWASAKI</strong>
-                                </h4>
-                                <p>เลือกชมผลิตภัณฑ์จากค่าย Kawasaki</p>
-                                <a href="kawasaki.php" class="btn btn-light">ค้นหา</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <img src="img\logo\suzuki.png">
-                                <h4>
-                                    <strong>SUZUKI</strong>
-                                </h4>
-                                <p>เลือกชมผลิตภัณฑ์จากค่าย Suzuki</p>
-                                <a href="suzuki.php" class="btn btn-light">ค้นหา</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
 
-    
-
-    <!-- Footer -->
+ <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -178,8 +145,23 @@
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-
+ 
+ 
+  </div>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/placeholdem.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+ 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -261,5 +243,4 @@
     </script>
 
 </body>
-
 </html>
