@@ -1,4 +1,5 @@
-<ul class="nav nav-pills nav-stacked">
+<li class="nav nav-pills nav-stacked ">
+
  <?php
  use google\appengine\api\users\User;
  use google\appengine\api\users\UserService;
@@ -33,4 +34,4 @@
 					  echo "<li $active><a href= 'main.php?p=edit&file=menu.txt'>Edit Menu</a>";
 					}
 ?>
-</ul> 
+<li> 

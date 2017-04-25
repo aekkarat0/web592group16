@@ -165,13 +165,13 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 0px 0px 0px 0px;
 }
 
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 .service-item {
@@ -247,4 +247,82 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+
+
+section#port {
+  position: relative;
+}
+section#port .port-item {
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  color: #999999;
+}
+section#port .port-item i.fa {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 35px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 104px;
+  
+}
+section#port .port-item i.fa {
+  border: 2px solid #66cdcc;
+  color: #66cdcc;
+}
+section#port .port-item:hover i.fa {
+  color: #ffffff;
+  background: #66cdcc;
+}
+section#port .port-item:hover h3 {
+  color: #66cdcc;
+
+}
+.section-heading {
+  margin: 60px 0 80px;
+  text-align: center;
+}
+.section-heading h1 {
+  display: inline-block;
+  font-size: 55px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.section-heading p {
+  font-size: 25px;
+  color: #999999;
+  font-weight: 300;
+}
+.section-heading .divider:after {
+  content: "";
+  position: relative;
+  height: 4px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: 13px auto;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
+}
+.section-heading.inverse h1,
+.section-heading.inverse p {
+  color: #ffffff;
+}
+.section-heading.inverse .divider:after {
+  background: #ffffff;
+}
+section .section-heading .divider:after {
+  background: #66cdcc;
 }

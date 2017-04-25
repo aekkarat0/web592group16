@@ -37,16 +37,10 @@ function userpic($uid){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
- <title><?= $page ?> </title>
- 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <link rel="stylesheet"
-href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	
-	
-	<!-- Bootstrap Core CSS -->
+
+    <title>Moto Shop</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -90,30 +84,21 @@ href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jq
             <h1>Moto Shop</h1>
             <h3>สินค้าและบริการต่างของเรา</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">เข้าสู่เว็บ</a>
+            <a href="#about"" class="btn btn-dark btn-lg">เข้าสู่เว็บ</a>
         </div>
     </header>
-	
 	<!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>NEWS</h2>
-                    <p class="lead">ข่าวสาร </a>.</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    <section id="about" class="about" >
+    <?php
+	readfile("news.php");
+	?>
+    </section>	
+	<section id="services" class="services">
+	<?php panel_include($title,"body.php" ,"primary"); ?>
+	</section>
+	<!-- About -->
 	
-<section id="#services" class="#services">
-<?php panel_include($title,"body.php" ,"primary"); ?>
-</section>
-
-
- <!-- Footer -->
+	<!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -141,26 +126,12 @@ href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jq
                     </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; Your Website 2014</p>
+					<p class="text-muted">startbootstrap-stylish-portfolio</p>
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
- 
- 
-  </div>
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/placeholdem.min.js"></script>
-    <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script>
-        $(document).ready(function() {
-            appMaster.preLoader();
-        });
-    </script>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a
+   </footer>
  
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
