@@ -14,7 +14,7 @@ $fbdata[ ] = $rec;
 $fbjson = json_encode($fbdata, JSON_PRETTY_PRINT);
  // 4. บันทึกลงไฟล์
 file_put_contents($fbfile,$fbjson);
-echo "<br>บันทึกเรียบร้อย <a href='main.php?p=$page' id='pagelink'>ตกลง</a>";
+echo "<br>Confirm? <a href='main.php?p=$page' id='pagelink'>OK</a>";
  return;
  }
  $pic = userpic($user->getUserId());
@@ -26,9 +26,9 @@ echo "<br>บันทึกเรียบร้อย <a href='main.php?p=$pag
 <div class="col-xs-10">
  <label for="feedback"><?= $userdata['nick'] ?></label>
  <div class="input-group">
- <input type="text" class="form-control" placeholder="เขียนความคิดเห็น" name="feedback">
+ <input type="text" class="form-control" placeholder="Comment" name="feedback">
  <span class="input-group-btn">
- <button class="btn btn-default">ส่ง </button>
+ <button class="btn btn-default">Send</button>
  </span>
  </div>
 </div> <!-- /.col-10 -->

@@ -10,14 +10,14 @@
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 100%;
       margin: auto;
   }
   </style>
 </head>
 <body>
 
-<div class="container">
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -35,7 +35,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="img/1.jpg" alt="Flower" width="460" height="345">
+        <img src="img/1.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>Z900</h3>
           <p></p>
@@ -43,7 +43,7 @@
       </div>
   
 	  <div class="item">
-        <img src="img/2.jpg" alt="Flower" width="460" height="345">
+        <img src="img/2.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>Bolt C-Spec</h3>
           <p></p>
@@ -51,7 +51,7 @@
       </div>
 	  
 	  <div class="item">
-        <img src="img/3.jpg" alt="Flower" width="460" height="345">
+        <img src="img/3.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>KRRC</h3>
           <p></p>
@@ -59,7 +59,7 @@
       </div>
 	
       <div class="item">
-        <img src="img/4.jpg" alt="Flower" width="460" height="345">
+        <img src="img/4.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>MT-03</h3>
           <p></p>
@@ -67,7 +67,7 @@
       </div>
   
 	  <div class="item">
-        <img src="img/5.jpg" alt="Flower" width="460" height="345">
+        <img src="img/5.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>R3</h3>
           <p></p>
@@ -75,7 +75,7 @@
       </div>
 	  
 	  <div class="item">
-        <img src="img/6.jpg" alt="Flower" width="460" height="345">
+        <img src="img/6.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>FZ-09</h3>
           <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -83,7 +83,7 @@
       </div>
 	  
 	  <div class="item">
-        <img src="img/7.jpg" alt="Flower" width="460" height="345">
+        <img src="img/7.jpg" alt="Flower" width="900" height="664">
         <div class="carousel-caption">
           <h3>SR 400</h3>
           <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -102,7 +102,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+
 
 </body>
 </html>

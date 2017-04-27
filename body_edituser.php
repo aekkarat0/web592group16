@@ -27,6 +27,7 @@
 	}
 	
 ?>
+<br>
 <form method="post" action="" enctype="multipart/form-data">
 	
 	<div class="form-group col-md-12" >
@@ -65,3 +66,5 @@
 	</div>
 
 </form>
+<br>
+<br>

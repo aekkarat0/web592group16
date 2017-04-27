@@ -21,11 +21,11 @@
     background-color: white; 
     color: black; 
 	border-radius: 8px;
-    border: 2px solid #2ecc71;
+    border: 2px solid #1abc9c;
 }
 
 .button1:hover {
-    background-color: #2ecc71;
+    background-color: #1abc9c;
     color: white;
 }
 
@@ -33,11 +33,11 @@
     background-color: white; 
     color: black; 
 	border-radius: 8px;
-    border: 2px solid #3498db;
+    border: 2px solid #8cc152;
 }
 
 .button2:hover {
-    background-color: #3498db;
+    background-color: #8cc152;
     color: white;
 }
 
@@ -45,11 +45,11 @@
     background-color: white; 
     color: black; 
 	border-radius: 8px;
-    border: 2px solid #f39c12;
+    border: 2px solid #34495e;
 }
 
 .button3:hover {
-    background-color: #f39c12;
+    background-color: #34495e;
     color: white;
 }
 
@@ -57,11 +57,11 @@
     background-color: white;
     color: black;
 	border-radius: 8px;
-    border: 2px solid #e74c3c;
+    border: 2px solid #3bafda;
 }
 
 .button4:hover {
-	background-color: #e74c3c;
+	background-color: #3bafda;
 	color: white;
 	}
 
@@ -69,36 +69,36 @@
     background-color: white;
     color: black;
 	border-radius: 8px;
-    border: 2px solid #9b59b6;
+    border: 2px solid #e74c3c;
 }
 
 .button5:hover {
-    background-color: #9b59b6;
+    background-color: #e74c3c;
     color: white;
 }
 .button6 {
     background-color: white;
     color: black;
 	border-radius: 8px;
-    border: 2px solid #bdc3c7;
+    border: 2px solid #da4453;
 }
 
 .button6:hover {
-    background-color: #bdc3c7;
+    background-color: #da4453;
     color: white;
 }
 </style>
 </head>
 <body>
+<br>
+<br>
 
-<h2>Product Type</h2>
-
-<a href="#sport"" class="button button1">sport</a>
-<a href="#naked"" class="button button2">naked</a>
-<a href="#cruiser"" class="button button3">cruiser</a>
-<a href="#automatic"" class="button button4">automatic</a>
-<a href="#touring"" class="button button5">touring</a>
-<a href="#adventure"" class="button button6">Adventure</a>
+<a href="#sport"" class="button button1"><b>SPORT</b></a>
+<a href="#naked"" class="button button2"><b>NAKED</b></a>
+<a href="#cruiser"" class="button button3"><b>CRUISER</b></a>
+<a href="#automatic"" class="button button4"><b>AUTOMATIC</b></a>
+<a href="#touring"" class="button button5"><b>TOURING</b></a>
+<a href="#adventure"" class="button button6"><b>ADVENTURE</b></a>
 
 
 </body>

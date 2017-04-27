@@ -10,9 +10,9 @@
 		if($_POST["file"] && $_POST["filedata"]){
 		file_put_contents($filename,$_POST["filedata"]);
 		$page=substr($file,0,-5);
-		if($file=='menu.txt') $page='home';
+		if($file=='Product_menu.txt') $page='home';
 	?>  
-	  บันทึก main เรียบร้อบ  ไปที่หน้า  <a href='main.php?p=<?=$page?>' id='pagelink'><?=$page?></a>
+	  บันทึก Product เรียบร้อบ  ไปที่หน้า <a href='Product.php?p=<?=$page?>' id='pagelink'><?=$page?></a>
 	  <script>
 	  window.setTimeout(function(){pagelink.click()},1000);
 	  </script>
