@@ -1,5 +1,6 @@
 <!doctype html>
 <?php
+error_reporting(0);
  $appid = "web592group16.appspot.com";
  $page = $_GET['p'];
  if($page=='') $page='main';
